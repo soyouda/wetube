@@ -1,1 +1,10 @@
 extends layouts/main.pug
+
+block content
+    div.form-container
+        form(action=routes.editProfile, method="post")
+            lable(for="chooseFile") Video File
+            input(type="file", id="chooseFile" name="chooseFile")
+            input(type="text", placeholder="Title", name="title")
+            input(type="text", placeholder="Description", name="description")
+            input(type="submit", value="Upload Video")
