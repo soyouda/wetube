@@ -1,5 +1,6 @@
 extends layouts/main.pug
 
 block content
-    div.videos
-        h1 Video
+        div.videos
+            each video in videos
+                h1= video.title
