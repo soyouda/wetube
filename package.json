@@ -6,7 +6,7 @@
   "author": "JinTae Kim",
   "license": "ISC",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node init.js --delay 2",
+    "dev:server": "nodemon --exec babel-node init.js --delay 2 --ignore 'scss'",
     "dev:assets": "WEBPACK_ENV=development webpack -w",
     "build:aseets": "WEBPACK_ENV=production webpack"
   },
