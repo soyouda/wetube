@@ -29,7 +29,6 @@ export const postJoin = async (req, res, next) => {
 };
 
 export const getLogin = (req, res) => {
-    console.log(req.body);
     res.render("login", { pageTitle: "Log In" });
 };
 export const postLogin = passport.authenticate("local", {
