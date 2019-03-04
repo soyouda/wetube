@@ -1,5 +1,5 @@
 {
-  "name": "wetube",
+  "name": "youtwitch",
   "version": "1.0.0",
   "description": "Cloning Youtube with Vanilla and Node.js",
   "main": "app.js",
