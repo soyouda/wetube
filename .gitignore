@@ -82,3 +82,6 @@ typings/
 package-lock.json
 .idea/
 *.iml
+uploads
+static
+build

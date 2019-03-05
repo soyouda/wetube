@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 import express from "express";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
@@ -8,6 +9,7 @@ import MongoStore from "connect-mongo";
 import mongoose from "mongoose";
 import passport from "passport";
 import session from "express-session";
+import path from "path";
 import routes from "./routes";
 import globalRouter from "./routers/globalRouter";
 import userRouter from "./routers/userRouter";
@@ -22,8 +24,8 @@ const CookieStore = MongoStore(session);
 //middleware
 app.use(helmet());
 app.set("view engine", "pug");
-app.use("/uploads", express.static("uploads"));
-app.use("/static", express.static("static"));
+app.set("views", path.join(__dirname, "views"));
+app.use("/static", express.static(path.join(__dirname, "static")));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended:true }));
 app.use(bodyParser.json());
