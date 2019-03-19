@@ -1,7 +1,14 @@
 doctype html
 html
     head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no")
+        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style", content="black")
         title #{pageTitle} | #{siteName}
+        link(rel="apple-touch-icon", href="icon-safari-home.png")
+        link(rel="apple-touch-icon-precomposed" href="icon-safari-home.png")
+        link(rel="apple-touch-startup-image" href="loading.png")
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css", integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr", crossorigin="anonymous")
         link(rel="stylesheet", href="/static/style.css")
     body

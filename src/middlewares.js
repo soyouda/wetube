@@ -4,8 +4,8 @@ import aws from "aws-sdk";
 import routes from "./routes";
 
 const s3 = new aws.S3({
-    accessKeyId: process.env.AWS_KEY,
-    secretAccessKey: process.env.AWS_PRIVATE_KEY
+    accessKeyId: process.env.AWS_S3_ACCESS_KEY,
+    secretAccessKey: process.env.AWS_S3_SECRET_ACCESS_KEY
 });
 
 export const multerVideo = multer({
@@ -19,7 +19,7 @@ export const multerAvatar = multer({
     storage: multers3({
         s3,
         acl: "public-read",
-        bucket: "youtwitch/avatar"
+        bucket: "youtwitch/image/avatar"
     })
 });
 
