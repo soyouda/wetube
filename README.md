@@ -1,6 +1,8 @@
 # YouTwitch
 Cloning Youtube
 
+Page Link : http://ec2-52-78-65-159.ap-northeast-2.compute.amazonaws.com/
+
 ## Spec
 
 - Vanilla (ES6)
